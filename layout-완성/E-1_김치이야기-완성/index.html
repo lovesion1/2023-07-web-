@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹디자인기능사 레이아웃 E-1</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./script/jquery-1.12.3.js" defer></script>
+  <script src="./script/script.js" defer></script>  
+</head>
+
+<body>
+  <div id="wrap">
+    <main>
+      <header>
+        <h1 class="logo">
+          <a href="#">
+            <img src="./images/logo.png" alt="logo">
+          </a>
+        </h1>
+        <nav>
+          <ul class="mainmenu">
+            <li>
+              <a href="#">김치 소개</a>
+              <ul class="submenu">
+                <li><a href="#">초대의 글</a></li>
+                <li><a href="#">김치의 유래</a></li>
+                <li><a href="#">김치 재료</a></li>
+                <li><a href="#">오시는 길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">김치퓨전</a>
+              <ul class="submenu">
+                <li><a href="#">지역별 김치</a></li>
+                <li><a href="#">김치 스파게티</a></li>
+                <li><a href="#">김치 볶음밥</a></li>
+                <li><a href="#">김치와 고기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">체험프로그램</a>
+              <ul class="submenu">
+                <li><a href="#">김치 담그기</a></li>
+                <li><a href="#">명사와 함께</a></li>
+                <li><a href="#">관람하기</a></li>
+                <li><a href="#">예약하기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">커뮤니티</a>
+              <ul class="submenu">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">참여게시판</a></li>
+                <li><a href="#">자료실</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- //header -->
+
+      <section>
+        <div class="banner">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./images/banner.jpg" alt="logo">
+              </a>
+            </li>
+            <li>
+              <h5>김치 이야기 이벤트</h5>
+              <p>김치 이야기 이벤트에서 김치를 퓨전하는 방법을 배워보세요. </p>
+            </li>
+            <li>
+              <span>arrow</span>
+            </li>
+          </ul>
+        </div>
+        <div class="content2 list">
+          <h3>공지사항</h3>
+          <ul class="notice">
+            <li>
+              <a href="#">
+                <strong>김치스파게티 레시피를 알아보세요</strong>
+                <span>2020.11.27</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <strong>지역별 김치의 레시피를 알아보세요</strong>
+                <span>2020.11.27</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <strong>김치 볶음밥의 레시피를 알아보세요</strong>
+                <span>2020.11.27</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <strong>김치와 고기의 레시피를 알아보세요</strong>
+                <span>2020.11.27</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="content3 list">
+          <h3>갤러리</h3>
+          <ul class="gallery">
+            <li>
+              <a href="#">
+                <img src="./images/gallery01.jpg" alt="gallery01">
+                <span>gallery01</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/gallery02.jpg" alt="gallery02">
+                <span>gallery02</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="link">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./images/link1.png" alt="link1">
+                <span>link1</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/link2.png" alt="link2">
+                <span>link2</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/link3.png" alt="link3">
+                <span>link3</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/link4.png" alt="link4">
+                <span>link4</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- section -->
+      <div id="modalArea">
+        <div class="modal">
+          <h4>김치 이야기 이벤트</h4>
+          <p>김치 이야기 이벤트에서 김치를 퓨전하는 방법을 배워보세요. 김치 스파게티,김치 볶음밥는 물론 김치와 고기를 맛있게 요리할수 있습니다.</p>
+          <div class="btn">CLOSE</div>
+        </div>
+      </div>
+
+      <article>
+        <div class="sliderWrap">
+          <ul class="slider">
+            <li>
+              <a href="#">
+               <span>김치 담그기 이벤트1</span> 
+              </a>
+            </li>
+            <li>
+              <a href="#">
+               <span>김치 담그기 이벤트2</span> 
+              </a>
+            </li>
+            <li>
+              <a href="#">
+               <span>김치 담그기 이벤트3</span> 
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <!-- article -->
+    </main>
+    <!-- //main -->
+
+    <footer>
+      <div class="footer1">
+        <a href="#">
+          <img src="./images/f-logo.png" alt="f-logo">
+        </a>
+      </div>
+      <div class="footer2">
+        <div class="footer2-1">
+          <ul>
+            <li><a href="#">하단메뉴1</a></li>
+            <li><a href="#">하단메뉴2</a></li>
+            <li><a href="#">하단메뉴3</a></li>
+            <li><a href="#">하단메뉴4</a></li>
+          </ul>
+        </div>
+        <div class="footer2-2">
+          <address>COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED</address>
+        </div>
+      </div>
+    </footer>
+    <!-- //footer -->
+  </div>
+  <!-- //wrap -->
+</body>
+
+</html>

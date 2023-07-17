@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹디자인기능사 레이아웃 E-2</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./script/jquery-1.12.3.js" defer></script>
+  <script src="./script/script.js" defer></script>  
+</head>
+
+<body>
+  <div id="wrap">
+    <main>
+      <header>
+        <h1 class="logo">
+          <a href="#">
+            <img src="./images/logo.png" alt="logo">
+          </a>
+        </h1>
+        <nav>
+          <ul class="mainmenu">
+            <li>
+              <a href="#">박물관 소개</a>
+              <ul class="submenu">
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">박물관연혁</a></li>
+                <li><a href="#">유물현황</a></li>
+                <li><a href="#">관람안내</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">전시</a>
+              <ul class="submenu">
+                <li><a href="#">선사시대</a></li>
+                <li><a href="#">삼국시대</a></li>
+                <li><a href="#">조선시대</a></li>
+                <li><a href="#">근대시대</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">연구</a>
+              <ul class="submenu">
+                <li><a href="#">생활유적</a></li>
+                <li><a href="#">분묘유적</a></li>
+                <li><a href="#">생산유적</a></li>
+                <li><a href="#">통신유적</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">교육</a>
+              <ul class="submenu">
+                <li><a href="#">문화행사</a></li>
+                <li><a href="#">진로체험</a></li>
+                <li><a href="#">외부교육</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- //header -->
+
+      <section>
+        <div class="content1 list">
+          <h3>공지사항</h3>
+          <ul class="notice">
+            <li>
+              <a href="#">
+                <strong>역사박물관에서 역사에 참여해보세요</strong>
+                <span>2020.11.27</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <strong>생활유적의 연구에 참여해보세요</strong>
+                <span>2020.11.27</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <strong>통신유적의 연구에 참여해보세요</strong>
+                <span>2020.11.27</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <strong>다양한 문화행사에 참여해보세요</strong>
+                <span>2020.11.27</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="content2 list">
+          <h3>갤러리</h3>
+          <ul class="gallery">
+            <li>
+              <a href="#">
+                <img src="./images/gallery01.jpg" alt="gallery01">
+                <span>gallery01</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/gallery02.jpg" alt="gallery02">
+                <span>gallery02</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="link">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./images/link1.png" alt="link1">
+                <span>link1</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/link2.png" alt="link2">
+                <span>link2</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/link3.png" alt="link3">
+                <span>link3</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/link4.png" alt="link3">
+                <span>link4</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- section -->
+
+      <article>
+        <div class="sliderWrap">
+          <ul class="slider">
+            <li>
+              <a href="#">
+                <span>역사박물관 이벤트1</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>역사박물관 이벤트2</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>역사박물관 이벤트3</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <!-- article -->
+    </main>
+    <!-- //main -->
+    <div id="modalArea">
+      <div class="modal">
+        <h4>역사박물관 이벤트</h4>
+        <p>역사박물관 이벤트에서 선사시대, 삼국시대, 조선시대, 근대시대를 체험할수 있는 다양한 이벤트를 마련하였습니다.</p>
+        <div class="btn">CLOSE</div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer1">
+        <a href="#">
+          <img src="./images/f-logo.png" alt="footerLogo">
+        </a>
+      </div>
+      <div class="footer2">
+        <address>COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED</address>
+      </div>
+      <div class="footer3">
+        <select name="#" id="#">
+          <option>하단메뉴</option>
+          <option value="1">하단메뉴1</option>
+          <option value="2">하단메뉴2</option>
+          <option value="3">하단메뉴3</option>
+        </select>
+      </div>
+    </footer>
+    <!-- //footer -->
+  </div>
+  <!-- //wrap -->
+</body>
+</html>

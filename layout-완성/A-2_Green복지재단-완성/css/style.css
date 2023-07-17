@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  color: #333;
+  font-size: 16px;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+#wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  position: relative;
+  background-color: #7777ff;
+  /* transition: .5; */
+}
+header::after{
+  content: '';
+  width: 100%;
+  height: 0;
+  position: absolute;
+  background-color: #ccccff;
+  top: 100px;
+  transition: .3s;
+  z-index: 1;
+}
+header.active::after{
+  height: 135px;
+}
+
+header .logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #333; */
+}
+
+header nav {
+  width: 80%;
+  /* background-color: #e3e3e3; */
+}
+header nav .mainMenu{
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+}
+header nav .mainMenu li{
+  
+}
+header nav .mainMenu >li{
+  
+}
+header nav .mainMenu li a{
+  width: 200px;
+  line-height: 50px;
+  text-align: center;
+}
+header nav .mainMenu > li > a{
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #9999ff;
+}
+header nav .mainMenu > li:hover >  a{
+  background-color: #4444ff;
+  color: #fff;
+}
+header nav .mainMenu .subMenu{
+  position: absolute;
+  top: 100px;
+  /* background-color: #999; */
+  display: none;
+  z-index: 5;
+}
+/* header nav .mainMenu:hover .subMenu{
+  display: block;
+} */
+header nav .mainMenu .subMenu li{}
+header nav .mainMenu .subMenu li a{
+  line-height: 45px;
+  font-size: 1.1rem;
+}
+header nav .mainMenu .subMenu li a:hover{
+  background-color: #7777ff;
+  color: #fff;
+}
+
+article {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+article .slider{
+  display: flex;
+  width: 300%;
+}
+article .slider li{}
+article .slider li a{
+  position: relative;
+}
+article .slider li a img{
+  display: block;
+}
+article .slider li a span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 10px 30px;
+  background-color: rgba(9,9,9,.5);
+  color: #fff;
+}
+main {
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+
+main .notice {
+  width: 33%;
+  padding: 15px;
+}
+main .tabtitle{
+  width: 100px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #999;
+  color: #fff;
+}
+main .notice h3{}
+main .notice ul{
+  border: 1px solid #999;
+}
+main .notice ul li{
+  padding: 0 15px 3px;
+}
+main .notice ul li a{
+  line-height: 2;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid transparent;
+}
+main .notice ul li a:hover{
+  border-bottom: 1px solid #999;
+  color: #222;
+}
+main .gallery {
+  width: 33%;
+  padding: 10px 15px;
+}
+main .gallery ul{
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #999;
+} 
+main .gallery ul li{} 
+main .gallery ul li a:hover img{
+  opacity: .8;
+} 
+main .gallery ul li a span{
+  display: block;
+  text-align: center;
+} 
+main .gallery ul li a:hover span{
+  font-weight: bold;
+}
+main .banner {
+  width: 34%;
+}
+main .banner a{
+  position: relative;
+}
+main .banner a img{}
+main .banner a span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color:rgba(255,255,255,.7);
+  padding: 20px 30px;
+  border-radius: 30px;
+  font-size: 1.3rem;
+}
+main .banner a:hover img{
+  opacity: .8;
+}
+main .banner a:hover span{
+  font-weight: bold;
+}
+#popupArea{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  display: none;
+}
+#popupArea .popup{
+  width: 500px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+#popupArea .popup h3{
+  font-size: 1.1rem;
+}
+#popupArea .popup p{
+  padding: 30px 20px;
+  font-size: 1.1rem;
+}
+#popupArea .popup .btn{
+  padding: 10px 20px 15px;
+  background-color: #999;
+  display: inline-block;
+  border-radius: 15px;
+  color: #fff;
+}
+#popupArea .popup .btn:hover{
+  background-color: #777;
+  font-weight: bold;
+}
+footer {
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  background-color: #7777ff;
+  display: flex;
+}
+
+footer .footer1 {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+footer .footer1 img{
+  opacity: .7;
+}
+footer .footer1 img:hover{
+  opacity: 1;
+}
+footer .footer2 {
+  width: 60%;
+}
+footer .footer2 address{
+  font-style: normal;
+  text-align: center;
+}
+
+footer .footer3 {
+  width: 20%;
+}
+footer .footer3 select{
+  width: 150px;
+  height: 40px;
+  padding: 5px;
+  color: #555;
+}
+footer .footer3 select option{}

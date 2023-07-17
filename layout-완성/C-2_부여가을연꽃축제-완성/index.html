@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹디자인기능사 레이아웃 C-2</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./script/jquery-1.12.3.js" defer></script>
+  <script src="./script/script.js" defer></script>  
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <h1>
+        <a href="#"><img src="./images/logo.png" alt="logo"></a>
+      </h1>
+      <nav>
+        <ul class="mainmenu">
+          <li>
+            <a href="#">축제소개</a>
+            <ul class="submenu">
+              <li><a href="#">초대의 글</a></li>
+              <li><a href="#">축제개요</a></li>
+              <li><a href="#">축제연혁</a></li>
+              <li><a href="#">오시는길</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">행사안내</a>
+            <ul class="submenu">
+              <li><a href="#">셔틀버스안내</a></li>
+              <li><a href="#">행사안내</a></li>
+              <li><a href="#">행사일정</a></li>
+              <li><a href="#">소공연장</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">홍보마당</a>
+            <ul class="submenu">
+              <li><a href="#">축제소식</a></li>
+              <li><a href="#">보도자료</a></li>
+              <li><a href="#">음식레시피</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">참여마당</a>
+            <ul class="submenu">
+              <li><a href="#">참가후기</a></li>
+              <li><a href="#">연꽃갤러리</a></li>
+              <li><a href="#">포토갤러리</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header -->
+
+    <main>
+      <article>
+        <ul class="slider">
+          <li>
+            <a href="#">
+              <img src="./images/img1.jpg" alt="부여 가을연꽃축제1">
+              <span>부여 가을연꽃축제1</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/img2.jpg" alt="부여 가을연꽃축제2">
+              <span>부여 가을연꽃축제2</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/img3.jpg" alt="부여 가을연꽃축제3">
+              <span>부여 가을연꽃축제3</span>
+            </a>
+          </li>
+        </ul>
+      </article>
+      <!-- //slider -->
+
+      <section>
+        <div class="content1">
+          <h3>공지사항</h3>
+          <ul class="notice">
+            <li>
+              <a href="#">
+                <strong>가을연꽃축제 공지사항1</strong>
+                <span>2020.11.23</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <strong>가을연꽃축제 공지사항2</strong>
+                <span>2020.11.23</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <strong>가을연꽃축제 공지사항3</strong>
+                <span>2020.11.23</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <strong>가을연꽃축제 공지사항4</strong>
+                <span>2020.11.23</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="content2">
+          <h3>갤러리</h3>
+          <ul class="gallery">
+            <li>
+              <a href="#">
+                <img src="./images/icon1.jpg" alt="gallery01">
+                <span>gallery01</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon2.jpg" alt="gallery02">
+                <span>gallery02</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon3.jpg" alt="gallery03">
+                <span>gallery03</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="content3">
+          <a href="#">
+            <img src="./images/direct.jpg" alt="direct">
+            <span>direct</span>
+          </a>
+        </div>
+      </section>
+      <!-- section -->
+      <div id="modalArea">
+        <div class="modal">
+          <h2>부여 가을연꽃축제 공지사항</h2>
+          <p>연꽃화원에 피어난 사랑 이야기를 간직한 스물 한살 연꽃화원에서 펼쳐지는 형형색색의 야간경관과 다채로운 공연무대, 밤에는 일곱가지 테마의 연꽃정원을 중심으로 펼쳐지는 환상적인 빛의 향연과 낮에는 10만여평 연지에 피어난 천만송이 연꽃과 함께 지역문화예술인의 수준 높은 공연과 각종 체험 및 이벤트 프로그램이 운영됩니다.</p>
+          <div class="btn">닫기</div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer1">
+          <address>COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED</address>
+        </div>
+        <div class="footer2">
+          <div class="footer2-1">
+            <ul>
+              <li>
+                <a href="#"><img src="./images/sns1.jpg" alt="sns1"></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/sns2.jpg" alt="sns2"></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/sns3.jpg" alt="sns3"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer2-2">
+            <select name="#" id="#">
+              <option>패밀리사이트</option>
+              <option value="1">패밀리사이트1</option>
+              <option value="2">패밀리사이트2</option>
+              <option value="3">패밀리사이트3</option>
+            </select>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <!-- main -->
+  </div>
+  <!-- //wrap -->
+</body>
+
+</html>

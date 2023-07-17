@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹디자인기능사 레이아웃 B-3</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .inner {
+      width: 1200px;
+      margin: 0 auto;
+      display: flex;
+    }
+
+    #wrap {
+      width: 100%;
+    }
+
+    header {
+      width: 100%;
+      height: 100px;
+      background-color: #999;
+    }
+
+    header .logo {
+      width: 20%;
+      height: 100px;
+      background-color: #888;
+    }
+
+    header nav {
+      width: 80%;
+      height: 100px;
+      background-color: #777;
+    }
+
+    article {
+      width: 100%;
+      height: 300px;
+      background: #999;
+    }
+
+    main {
+      width: 100%;
+    }
+
+    main .content1 {
+      width: 400px;
+      height: 200px;
+      background-color: #666;
+    }
+
+    main .content2 {
+      width: 400px;
+      height: 200px;
+      background-color: #555;
+    }
+
+    main .content3 {
+      width: 400px;
+      height: 200px;
+      background-color: #444;
+    }
+
+    footer {
+      width: 100%;
+      background-color: #999;
+    }
+
+    footer .footer1 {
+      width: 20%;
+      height: 100px;
+      background-color: #888;
+    }
+
+    footer .footer2 {
+      width: 60%;
+      height: 100px;
+      background-color: #777;
+    }
+
+    footer .footer3 {
+      width: 20%;
+      height: 100px;
+      background-color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div class="inner">
+        <h1 class="logo"></h1>
+        <nav></nav>
+      </div>
+    </header>
+    <!-- header -->
+
+    <article class="inner">
+    </article>
+    <!-- article -->
+
+    <main class="inner">
+      <section class="content1"></section>
+      <section class="content2"></section>
+      <section class="content3"></section>
+    </main>
+    <!-- main -->
+
+    <footer>
+      <div class="inner">
+        <div class="footer1"></div>
+        <div class="footer2"></div>
+        <div class="footer3"></div>
+      </div>
+    </footer>
+    <!-- footer -->
+  </div>
+  <!-- //wrap -->
+</body>
+
+</html>

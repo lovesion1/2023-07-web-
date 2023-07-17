@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body,html{
+  color: #333;
+  font-size: 16px;
+  background: #fff;
+}
+ul{
+  list-style: none;
+}
+a{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+#wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  height: 100px;
+}
+
+header .logo {
+  width: 20%;
+  text-align: center;
+  line-height: 100px;
+}
+
+header nav {
+  width: 80%;
+}
+header nav .mainMenu{
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+}
+header nav .mainMenu li{
+  
+}
+header nav .mainMenu li a{
+  width: 200px;
+  text-align: center;
+}
+header nav .mainMenu > li> a{
+  line-height: 50px;
+  background-color: #bbc;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+header nav .mainMenu li:hover a{
+  background-color: #bbf;
+}
+header nav .mainMenu .subMenu{
+  display: none;
+  position: absolute;
+  top: 100px;
+  z-index: 2;
+}
+header nav .mainMenu .subMenu li{}
+header nav .mainMenu .subMenu li a{
+  line-height: 45px;
+  background-color: #ccc;
+  font-weight: bold;
+}
+header nav .mainMenu .subMenu li a:hover{
+  background-color: #cc9;
+}
+
+article {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+article .slider li{
+  position: relative;
+}
+article .slider li a{}
+article .slider li a img{
+  display: block;
+}
+article .slider li a span{
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 30px;
+}
+main {
+  width: 100%;
+  display: flex;
+}
+main .content1 {
+  width: 400px;
+  height: 170px;
+  padding: 15px;
+}
+main .content1 ul.tabmenu{
+  position: relative;
+  box-sizing: border-box;
+}
+main .content1 ul.tabmenu > li {
+  float: left;
+}
+main .content1 ul.tabmenu > li >a{
+  width: 100px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #999;
+  border-bottom: none;
+}
+main .content1 ul.tabmenu > li.active >a{
+  background-color: #999;
+  font-weight: bold;
+}
+main .content1 ul.tabmenu li a:hover{
+  font-weight: bold;
+}
+main .content1 ul.tabmenu li > div{
+  position: absolute;
+  height: 0;
+  width: 380px;
+  left: 0;
+  display: none;
+}
+main .content1 ul.tabmenu li.active div{
+  height: 160px;
+  display: block;
+}
+main .content1 ul.tabmenu .notice li:hover{
+  background-color: #eee;
+}
+main .content1 ul.tabmenu ul{
+  padding: 0 10px;
+  border: 1px solid #999;
+}
+main .content1 ul.tabmenu .notice ul li{
+  line-height: 2;
+}
+main .content1 ul.tabmenu .notice ul li a{
+  display: flex;
+  justify-content: space-between;
+}
+main .content1 ul.tabmenu .gallery{  
+}
+main .content1 ul.tabmenu .gallery ul{
+  display: flex;
+  justify-content: space-around;
+  padding: 7px;
+}
+main .content1 ul.tabmenu .gallery li a{
+  
+}
+main .content1 ul.tabmenu .gallery li a img{}
+main .content1 ul.tabmenu .gallery li a span{
+  display: block;
+  text-align: center;
+}
+main .content1 ul.tabmenu .gallery li a:hover img{
+  opacity: .8;
+}
+main .content1 ul.tabmenu .gallery li a:hover span{
+  font-weight: bold;
+}
+
+main .content2 {
+  width: 400px;
+  height: 200px;
+  background-color: #c7c7c7;
+}
+main section.content2 > a{
+  position: relative;
+}
+main section.content2 > a:hover img{
+  opacity: .7;
+}
+main section.content2 > a span{
+  position: absolute;
+  width: 100px;
+  padding: 20px;
+  background-color: rgba(255,255,255,.7);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+main section.content2 > a:hover span{
+  font-weight: bold;
+}
+main .content3 {
+  width: 400px;
+  height: 200px;
+  background-color: #bcbcbc;
+}
+#popupArea{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+  display: none;
+}
+#popupArea .popup{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+#popupArea .popup h2{}
+#popupArea .popup p{
+  width: 80%;
+  font-size: 1.1rem;
+  padding: 30px 40px;
+}
+#popupArea .popup .btn{
+  display: inline-block;
+  background-color: rgba(0,0,0,.6);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  line-height: 10px;
+  cursor: pointer;  
+}
+#popupArea .popup .btn:hover{
+  background-color: rgba(0,0,0,.7);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  background-color: #aaf;
+}
+
+footer .footer1 {
+  width: 20%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: .7;
+}
+footer .footer1:hover{
+  opacity: 1;
+}
+footer .footer2 {
+  width: 80%;
+}
+
+footer .footer2 .footer2-1 {
+  width: 100%;
+  height: 50px;
+}
+footer .footer2 .footer2-1 ul{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+footer .footer2 .footer2-1 ul li:hover{
+  font-weight: bold;
+}
+footer .footer2 .footer2-1 ul li a{}
+
+footer .footer2 .footer2-2 {
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+}

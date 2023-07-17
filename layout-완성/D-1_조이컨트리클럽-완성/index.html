@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹디자인기능사 레이아웃 D-1</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./script/jquery-1.12.3.js" defer></script>
+  <script src="./script/script.js" defer></script>  
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <h1>
+        <a href="#">
+          <img src="./images/logo.png" alt="logo">
+        </a>
+      </h1>
+      <nav>
+        <ul class="mainmenu">
+          <li>
+            <a href="#">CLUB</a>
+            <ul class="submenu">
+              <li><a href="#">클럽소개</a></li>
+              <li><a href="#">시설안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">BOOKING</a>
+            <ul class="submenu">
+              <li><a href="#">요금안내</a></li>
+              <li><a href="#">예약안내</a></li>
+              <li><a href="#">위약안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">INFORMATION</a>
+            <ul class="submenu">
+              <li><a href="#">명예의 전당</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">자료실</a></li>
+              <li><a href="#">포토갤러리</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">COMMUNITY</a>
+            <ul class="submenu">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">Q&A</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- //aside -->
+    <main>
+      <article>
+        <ul class="slider">
+          <li>
+            <a href="#">
+              <span>조이컨트리클럽 이벤트1</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>조이컨트리클럽 이벤트2</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>조이컨트리클럽 이벤트3</span>
+            </a>
+          </li>
+        </ul>
+      </article>
+      <!-- //slider -->
+
+      <section class="link">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./images/link1.png" alt="link1">
+              <span>link1</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/link2.png" alt="link2">
+              <span>link2</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/link3.png" alt="link3">
+              <span>link3</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="contents">
+        <ul class="banner">
+          <li>
+            <a href="#">
+              <img src="./images/banner.jpg" alt="banner">
+            </a>            
+          </li>
+          <li>
+            <h5>조이컨트리클럽 달마다 맞이하는 이벤트</h5>
+            <p>조이컨트리클럽에서 달마다 이벤트를 준비하여 조이컨트리클럽의 회원에게 감동을 선사하기 위해 노력하고 있습니다.</p>
+          </li>
+          <li>
+            <a href="#">
+              <span>화살표</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="tabmenu">
+          <li class="active">
+            <a href="#">공지사항</a>
+            <div class="notice">
+              <ul>
+                <li>
+                  <a href="#">
+                    <strong>조이컨트리클럽 9월 이벤트</strong>
+                    <span>2020.11.27</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <strong>조이컨트리클럽 8월 이벤트</strong>
+                    <span>2020.11.27</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <strong>조이컨트리클럽 7월 이벤트</strong>
+                    <span>2020.11.27</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <strong>조이컨트리클럽 5월 이벤트</strong>
+                    <span>2020.11.27</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">갤러리</a>
+            <div class="gallery">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="./images/gallery01.jpg" alt="gallery1">
+                  <span>gallery1</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/gallery02.jpg" alt="gallery2">
+                  <span>gallery2</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/gallery03.jpg" alt="gallery3">
+                  <span>gallery3</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <div id="modalArea">
+        <div class="modal">
+          <h4>조이컨트리클럽 9월 이벤트</h4>
+          <p>조이컨트리클럽 9월 이벤트에서는 명예의 전당에서 트로의 제왕인 임영웅이 최신곡을 비롯한 인기곡으로 감동을 선사할 예정입니다. 임영웅을 만날수 있는 절호의 기회를 놓치지 말고 참여하시길 바랍니다.</p>
+          <div class="btn">닫기</div>
+        </div>
+      </div>
+      <!-- //contents -->
+    </main>
+    <footer>
+      <div class="footer1">
+        <a href="#">
+          <img src="./images/f-logo.png" alt="f-logo">
+        </a>
+      </div>
+      <div class="footer2">
+        <address>COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED</address>
+      </div>
+      <div class="footer3">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./images/sns1.jpg" alt="sns1">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/sns2.jpg" alt="sns2">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/sns3.jpg" alt="sns3">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- //footer -->
+  </div>
+  <!-- //wrap -->
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹디자인기능사 레이아웃 D-2</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./script/jquery-1.12.3.js" defer></script>
+  <script src="./script/script.js" defer></script>  
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <h1 class="logo">
+        <a href="#">
+          <img src="./images/logo.png" alt="logo">
+        </a>
+      </h1>
+      <nav>
+        <ul class="mainmenu">
+          <li>
+            <a href="#">지금의 서울</a>
+            <ul class="submenu">
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">축제&행사</a></li>
+              <li><a href="#">전시</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">추천</a>
+            <ul class="submenu">
+              <li><a href="#">에디터 추천</a></li>
+              <li><a href="#">테마코스</a></li>
+              <li><a href="#">도보해설관광</a></li>
+              <li><a href="#">한류관광</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">여행지</a>
+            <ul class="submenu">
+              <li><a href="#">명소</a></li>
+              <li><a href="#">엔터테이먼트</a></li>
+              <li><a href="#">음식</a></li>
+              <li><a href="#">게스트하우스</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">여행정보</a>
+            <ul class="submenu">
+              <li><a href="#">가이드북&지도</a></li>
+              <li><a href="#">시티투어버스</a></li>
+              <li><a href="#">날씨</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header -->
+
+    <main>
+      <div class="mainTop">
+        <article class="image">
+          <ul class="slider">
+            <li>
+              <a href="#">
+                <span>서울구석구석 이벤트1</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>서울구석구석 이벤트2</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>서울구석구석 이벤트3</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+        <article class="banner">
+          <ul>
+            <li>
+              <img src="./images/banner.jpg" alt="banner">
+            </li>
+            <li class="text">
+              <h4>서울구석구석 이벤트</h4>
+              <p>서울구석구석 이벤트에서 서울의 명소를 다닐수 있고, 서울의 엔터테이먼트를 즐길수 있으며 서울에서 가장 핫한 음식을 즐길수 있습니다.</p>
+            </li>
+            <li>
+              <span>화살표</span>
+            </li>
+          </ul>
+        </article>
+      </div>
+      <!-- //article -->
+
+      <section>
+        <div class="content1">
+          <h2>공지사항</h2>
+          <ul class="notice">
+            <li>
+              <a href="#">
+                <strong>서울구석구석 이벤트</strong>
+                <span>2020.11.27</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <strong>서울구석구석 이벤트</strong>
+                <span>2020.11.27</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <strong>서울구석구석 이벤트</strong>
+                <span>2020.11.27</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <strong>서울구석구석 이벤트</strong>
+                <span>2020.11.27</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="content2">
+          <h2>갤러리</h2>
+          <ul class="gallery">
+            <li>
+              <a href="#">
+                <img src="./images/gallery01.jpg" alt="gallery01">
+                <span>gallery01</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/gallery02.jpg" alt="gallery02">
+                <span>gallery02</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/gallery03.jpg" alt="gallery03">
+                <span>gallery03</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- section -->
+    </main>
+    <!-- main -->
+
+    <div id="modalArea">
+      <div class="modal">
+        <h2>서울구석구석 이벤트</h2>
+        <p>서울구석구석 이벤트를 통해 서울에서 가장 핫한 명소를 소개하고 있습니다. 절호의 기회를 놓치지 말고 참여하시길 바랍니다.</p>
+        <div class="btn">CLOSE</div>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="footer1">
+        <a href="#">
+          <img src="./images/f-logo.png" alt="flogo">
+        </a>
+      </div>
+      <div class="footer2">
+        <address>COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED</address>
+      </div>
+      <div class="footer3">
+        <select name="#" id="#">
+          <option>패밀리사이트</option>
+          <option value="1">패밀리사이트1</option>
+          <option value="2">패밀리사이트2</option>
+          <option value="3">패밀리사이트3</option>
+        </select>
+      </div>
+    </footer>
+    <!-- footer -->
+  </div>
+  <!-- wrap -->
+</body>
+
+</html>

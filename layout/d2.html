@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹디자인기능사 레이아웃 D-2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #wrap {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    header {
+      width: 200px;
+    }
+
+    header .logo {
+      width: 100%;
+      height: 100px;
+      background-color: #aaa;
+    }
+
+    header nav {
+      height: 550px;
+      background-color: #bbb;
+    }
+
+    main {
+      width: calc(100% - 200px);
+    }
+
+    article {
+      width: 100%;
+      display: flex;
+    }
+
+    article .image {
+      width: calc(100% - 230px);
+      height: 400px;
+      background-color: #999;
+    }
+
+    article .banner {
+      width: 230px;
+      height: 400px;
+      background-color: #888;
+    }
+
+    section {
+      width: 100%;
+      display: flex;
+    }
+
+    section .content1 {
+      width: 50%;
+      height: 250px;
+      background-color: #777;
+    }
+
+    section .content2 {
+      width: 50%;
+      height: 250px;
+      background-color: #666;
+    }
+
+    footer {
+      width: 100%;
+      display: flex;
+    }
+
+    footer .footer1 {
+      width: 200px;
+      height: 100px;
+      background-color: #555;
+    }
+
+    footer .footer2 {
+      width: calc(100% - 500px);
+      height: 100px;
+      background-color: #444;
+    }
+
+    footer .footer3 {
+      width: 300px;
+      height: 100px;
+      background-color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <h1 class="logo"></h1>
+      <nav></nav>
+    </header>
+    <!-- header -->
+
+    <main>
+      <article>
+        <div class="image"></div>
+        <div class="banner"></div>
+      </article>
+      <!-- //article -->
+
+      <section>
+        <div class="content1"></div>
+        <div class="content2"></div>
+      </section>
+      <!-- section -->
+    </main>
+    <!-- main -->
+
+    <footer>
+      <div class="footer1"></div>
+      <div class="footer2"></div>
+      <div class="footer3"></div>
+    </footer>
+    <!-- footer -->
+  </div>
+  <!-- wrap -->
+</body>
+
+</html>

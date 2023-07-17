@@ -1,0 +1,307 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+#wrap {
+  width: 1000px;
+  display: flex;
+}
+
+header {
+  width: 200px;
+}
+
+header .logo {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  height: 550px;
+}
+header nav .mainmenu{
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+header nav .mainmenu > li{
+  background-color: #f66;
+  border: 1px solid #eee;
+}
+header nav .mainmenu > li:hover{
+  background-color: #f33;
+}
+header nav .mainmenu > li> a{
+  line-height: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+header nav .mainmenu .submenu{
+  display: none;
+  width: 100%;
+  background-color: #f99;
+}
+header nav .mainmenu .submenu li{
+  height: 45px;
+}
+header nav .mainmenu .submenu li:hover{
+  background-color: #f87;
+}
+header nav .mainmenu .submenu li a{
+  line-height: 45px;
+  font-size: 1.1rem;
+}
+
+main {
+  width: 80%;
+  height: 650px;
+  background-color: #ffe;
+}
+
+article {
+  width: 100%;
+  height: 350px;
+}
+article ul.slider{
+  position: relative;
+}
+article ul.slider li{
+  position: absolute;
+}
+article ul.slider li a{}
+article ul.slider li a span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(255,255,255,.8);
+  padding: 20px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+}
+article ul.slider li a:hover img{
+  opacity: .8;
+}
+article ul.slider li a:hover span{
+  font-weight: bold;
+}
+section {
+  width: 100%;
+  display: flex;
+}
+section .content1 {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+}
+main .content1 .tabmenu{}
+main .content1 .tabmenu li{
+  position: relative;
+}
+main .content1 .tabmenu li.active{
+
+}
+main .content1 .tabmenu > li > a{
+  float: left;
+  width: 100px;
+  line-height: 35px;
+  border: 1px solid #333;
+  text-align: center;
+  border-bottom: none;
+}
+main .content1 .tabmenu > li.active > a{
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+}
+main .content1 .tabmenu > li:hover > a{
+  font-weight: bold;
+}
+main .content1 .tabmenu li div{
+  width: 290px;
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: 35px;
+  border: 1px solid #333;
+  display: none;
+}
+main .content1 .tabmenu li.active div{
+  height: 150px;
+  display: block;
+}
+main .content1 .tabmenu .notice{}
+main .content1 .tabmenu .notice ul{
+  padding: 5px;
+}
+main .content1 .tabmenu .notice ul li{}
+main .content1 .tabmenu .notice ul li a{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  line-height: 2.3;
+}
+main .content1 .tabmenu .notice ul li a:hover{
+  text-decoration: underline;
+}
+main .content1 .tabmenu .notice ul li a strong{}
+main .content1 .tabmenu .notice ul li a strong span{}
+main .content1 .tabmenu .gallery{}
+main .content1 .tabmenu .gallery ul{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main .content1 .tabmenu .gallery ul li{
+  
+}
+main .content1 .tabmenu .gallery ul li a{
+  
+}
+main .content1 .tabmenu .gallery ul li a img{
+  width: 85px;
+}
+main .content1 .tabmenu .gallery ul li a span{
+  display: block;
+  text-align: center;
+}
+main .content1 .tabmenu .gallery ul li a:hover img{
+  opacity: .8;
+}
+main .content1 .tabmenu .gallery ul li a:hover span{
+  font-weight: bold;
+}
+
+
+section .content2 {
+  width: 250px;
+  height: 200px;
+  padding: 15px;
+}
+section .content2 a{}
+section > div > a > img{
+  width: 230px;
+  height: 170px;
+}
+section > div > a{
+  position: relative;
+}
+section > div > a >span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(255,255,255,.8);
+  padding: 10px 15px;
+}
+section > div > a:hover >img{
+  opacity: .8;
+}
+section > div > a:hover >span{
+  font-weight: bold;
+}
+
+section .content2 a span{}
+section .content3 {
+  width: 250px;
+  height: 200px;
+  padding: 15px;
+}
+section .content3 a{}
+section .content3 a img{
+
+}
+section .content3 a span{}
+#modalArea{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+  display: none;
+}
+#modalArea .modal{
+  width: 500px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+#modalArea .modal h4{
+  font-size: 1.3rem;
+}
+#modalArea .modal p{
+  padding: 20px 30px 40px;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+#modalArea .modal .btn{
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+#modalArea .modal .btn:hover{
+  background-color: #222;
+}
+footer {
+  width: 100%;
+  display: flex;
+  background-color: #bbb;
+}
+
+footer .footer1 {
+  /* width: 200px; */
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer1 a{
+  padding: 0 10px;
+}
+footer .footer2 {
+  width: 80%;
+}
+
+footer .footer2 .footer2-1 {
+  width: 100%;
+  height: 50px;
+}
+footer .footer2 .footer2-1 ul{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+footer .footer2 .footer2-1 ul li:hover{
+  font-weight: bold;
+}
+footer .footer2 .footer2-2 {
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹디자인기능사 레이아웃 B-3</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #wrap {
+      width: 100%;
+    }
+
+    .inner {
+      width: 1200px;
+      margin: 0 auto;
+      display: flex;
+    }
+
+    header {
+      width: 100%;
+      height: 100px;
+      background-color: #999;
+    }
+
+    header .logo {
+      width: 20%;
+      height: 100px;
+      background-color: #888;
+    }
+
+    header nav {
+      width: 80%;
+      height: 100px;
+      background-color:#777;
+    }
+
+    article {
+      width: 100%;
+      height: 300px;
+      background-color: #666;
+    }
+
+    main {
+      width: 100%;
+    }
+
+    main .content1 {
+      width: 400px;
+      height: 200px;
+      background-color: #555;
+    }
+
+    main .content2 {
+      width: 400px;
+      height: 200px;
+      background-color: #999;
+    }
+
+    main .content3 {
+      width: 400px;
+      height: 200px;
+      background-color: #888;
+    }
+
+    footer {
+      width: 100%;
+      background-color: #777;
+    }
+
+    footer .footer1 {
+      width: 80%;
+    }
+
+    footer .footer1 .footer1-1 {
+      width: 100%;
+      height: 50px;
+      background-color: #666;
+    }
+
+    footer .footer1 .footer1-2 {
+      width: 100%;
+      height: 50px;
+      background-color: #555;
+    }
+
+    footer .footer2 {
+      width: 20%;
+      height: 100px;
+      background-color: #444;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div class="inner">
+        <h1 class="logo"></h1>
+        <nav></nav>
+      </div>
+    </header>
+    <!-- header -->
+
+    <article class="inner">
+    </article>
+    <!-- //slider -->
+
+    <main class="inner">
+      <section class="content1"></section>
+      <section class="content2"></section>
+      <section class="content3"></section>
+    </main>
+    <!-- //contents -->
+
+    <footer>
+      <div class="inner">
+        <div class="footer1">
+          <div class="footer1-1"></div>
+          <div class="footer1-2"></div>
+        </div>
+        <div class="footer2"></div>
+      </div>
+    </footer>
+    <!-- //footer -->
+  </div>
+  <!-- //wrap -->
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹디자인기능사 메뉴 S-1</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #wrap {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      width: 100%;
+      display: flex;
+    }
+
+    header .logo {
+      width: 20%;
+      height: 100px;
+      background-color: #efefef;
+    }
+
+    header .nav {
+      width: 80%;
+      height: 100px;
+      background-color: #e3e3e3;
+    }
+
+        /* slider */
+    article {
+      width: 1200px;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    article .slider li {
+      width: 1200px;
+    }
+
+    article .slider li a {
+      position: relative;
+    }
+
+    article .slider li img {
+      /* vertical-align: bottom; */
+      display: block;
+    }
+
+    article .slider li:hover img {
+      opacity: .7;
+    }
+
+    /*check*/
+    article .slider li a span {
+      position: absolute;
+      width: 300px;
+      line-height: 50px;
+      background-color: rgba(0, 0, 0, .5);
+      color: #fff;
+      text-align: center;
+      font-size: 25px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    main {
+      width: 100%;
+      display: flex;
+    }
+
+    main .content1 {
+      width: 33%;
+      height: 200px;
+      background-color: #d1d1d1;
+    }
+
+    main .content2 {
+      width: 33%;
+      height: 200px;
+      background-color: #c7c7c7;
+    }
+
+    main .content3 {
+      width: 34%;
+      height: 200px;
+      background-color: #bcbcbc;
+    }
+
+    footer {
+      width: 100%;
+      display: flex;
+    }
+
+    footer .footer1 {
+      width: 20%;
+      height: 100px;
+      background-color: #b1b1b1;
+    }
+
+    footer .footer2 {
+      width: 60%;
+      height: 100px;
+      background-color: #a3a3a3;
+    }
+
+    footer .footer3 {
+      width: 20%;
+      height: 100px;
+      background-color: #9d9d9d;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <h1 class="logo"></h1>
+      <nav class="nav"></nav>
+    </header>
+    <!-- //header -->
+
+    <article>
+      <ul class="slider">
+        <li><a href="javascript:void(0)">
+            <img src="./slider01.jpg" alt="imgslide1">
+            <span>imgslide1</span>
+          </a>
+        </li>
+        <li><a href="javascript:void(0)">
+
+            <img src="./slider02.jpg" alt="imgslide2"><span>imgslide2</span>
+          </a>
+        </li>
+        <li><a href="javascript:void(0)">
+
+            <img src="./slider03.jpg" alt="imgslide3"><span>imgslide3</span>
+          </a>
+        </li>
+      </ul>
+    </article>
+    <!-- //slider -->
+
+    <main>
+      <section class="content1"></section>
+      <section class="content2"></section>
+      <section class="content3"></section>
+    </main>
+    <!-- //contents -->
+
+    <footer>
+      <div class="footer1"></div>
+      <div class="footer2"></div>
+      <div class="footer3"></div>
+    </footer>
+    <!-- //footer -->
+  </div>
+  <!-- //wrap -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script>
+    // 위아래 슬라이드 이동
+    let index = 0;
+    const slider = $(".slider")
+
+    function slide() {
+      index = (index + 1) % 3;
+
+      slider.animate({
+        marginTop: index * -300
+      }, 500)
+    }
+    setInterval(slide, 3000)
+  </script>
+</body>
+
+</html>

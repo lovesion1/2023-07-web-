@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+a{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#wrap {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #eee;
+}
+header .inner{
+  height: 100px;
+  display: flex;
+  align-items: center;
+
+}
+
+header .logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+header nav {
+  width: 80%;
+  height: 100px;
+}
+header nav .mainmenu{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+}
+header nav .mainmenu li{
+  width: 200px;
+  text-align: center;
+  color: #fff;
+}
+header nav .mainmenu> li{
+  background: #55f;
+}
+header nav .mainmenu> li> a{
+  line-height: 50px;
+}
+header nav .mainmenu> li:hover{
+  background: #44f;
+}
+header nav .mainmenu .submenu{
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+header nav .mainmenu .submenu li{
+  background-color: #99b;
+}
+header nav .mainmenu .submenu li a{
+  line-height: 45px;
+  /* background: #77f; */
+}
+header nav .mainmenu .submenu li a:hover{
+  background-color: #99f;
+}
+
+article {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+article .slider{
+  width: 1200px;
+  height: 900px;
+}
+article .slider li{
+  position: relative;
+}
+article .slider li a{}
+article .slider li a img{
+  display: block;
+}
+article .slider li:hover a img{
+  opacity: .8;
+}
+article .slider li a span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(255,255,255,.6);
+  padding: 20px;
+  border-radius: 30px;
+}
+article .slider li:hover a span{
+  font-weight: bold;
+}
+
+main {
+  width: 100%;
+}
+main.inner{
+  display: flex;
+}
+main .content1 {
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+}
+main section h3{
+  display: inline-block;
+  padding: 5px;
+  background-color: #444;
+  color: #fff;
+  font-size: 1rem;
+}
+main .content1 .notice{
+  border: 1px solid #333;
+}
+main .content1 .notice li:nth-child(even){
+  background-color: #ccc;
+}
+main .content1 .notice li:hover{
+  background-color: #aaa;
+}
+main .content1 .notice a{
+  display: flex;
+  justify-content: space-around;
+  line-height: 2.3;
+}
+main .content2 {
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+}
+main .content2 .gallery{
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid;
+}
+main .content2 .gallery li{}
+main .content2 .gallery li a{}
+main .content2 .gallery li a img{}
+main .content2 .gallery li a span{
+  display: block;
+  text-align: center;
+}
+main .content2 .gallery li:hover a img{
+  opacity: .8;
+}
+main .content2 .gallery li:hover a span{
+  font-weight: bold;
+}
+
+main .content3 {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  padding: 10px;
+}
+main .content3 a{}
+main .content3 a img{
+  width: 370px;
+  height: 180px;
+}
+main .content3 a span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 10px 15px;
+  background-color: rgba(255,255,255,.6);
+  border-radius: 15px;
+}
+main .content3 a:hover img{
+  opacity: .8;
+}
+main .content3 a:hover span{
+  font-weight: bold;
+}
+
+#modalArea{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+  display: none;
+}
+#modalArea .modal{
+  width: 500px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+#modalArea .modal h4{
+  font-size: 1.3rem;
+}
+#modalArea .modal p{
+  padding: 20px 30px 40px;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+#modalArea .modal .btn{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #666;
+  color: #fff;
+  cursor: pointer;
+}
+#modalArea .modal .btn:hover{
+  background-color: #333;
+  font-weight: bold;
+}
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #d1d1d1;
+}
+footer .inner{
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+footer .footer1 {
+  width: 20%;
+}
+
+footer .footer2 {
+  width: 60%;
+  text-align: center;
+}
+
+footer .footer3 {
+  width: 20%;
+}
+
+footer .footer3 ul{
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer3 ul li:hover{
+  opacity: .8;
+}

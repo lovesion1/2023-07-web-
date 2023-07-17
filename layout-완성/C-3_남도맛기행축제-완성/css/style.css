@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+#wrap {
+  width: 1000px;
+  display: flex;
+}
+
+header {
+  width: 200px;
+}
+
+header h1 {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav {
+  width: 100%;
+  height: 550px;
+}
+header nav .mainmenu{
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+header nav .mainmenu li{
+  background-color: #f66;
+  border: 1px solid #eee;
+}
+header nav .mainmenu > li:hover{
+  background-color: #f33;
+}
+header nav .mainmenu > li> a{
+  line-height: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+header nav .mainmenu .submenu{
+  display: none;
+  width: 170px;
+  height: 300px;
+  background-color: #f99;
+  position: absolute;
+  left: 185px;
+  top: 45px;
+  z-index: 5;
+}
+header nav .mainmenu .submenu li{
+  line-height: 45px;
+  background-color: #f99;
+}
+header nav .mainmenu .submenu li:hover{
+  background-color: #f95;
+}
+main {
+  width: 800px;
+}
+
+article {
+  width: 800px;
+  height: 350px;
+  overflow: hidden;
+}
+
+article .slider{
+  width: 2400px;
+  height: 350px;
+  display: flex;
+}
+article .slider li{
+  position: relative;
+}
+article .slider li a{}
+article .slider li a img{
+  display: block;
+}
+article .slider li:hover a img{
+  opacity: .8;
+}
+article .slider li a span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(255,255,255,.6);
+  padding: 20px;
+  border-radius: 30px;
+}
+article .slider li:hover a span{
+  font-weight: bold;
+}
+section {
+  width: 100%;
+  display: flex;
+}
+
+section {
+  width: 100%;
+  display: flex;
+}
+
+section .content1 {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+}
+section section h3{
+  padding-left: 20px;
+  display: inline-block;
+  padding: 5px;
+  background-color: #444;
+  color: #fff;
+  font-size: 1rem;
+}
+section .content1 .notice{
+  border: 1px solid #333;
+}
+section .content1 .notice li{
+  padding:0 5px;
+}
+section .content1 .notice li:nth-child(even){
+  background-color: #ccc;
+}
+section .content1 .notice li:hover{
+  background-color: #aaa;
+}
+section .content1 .notice a{
+  display: flex;
+  justify-content: space-between;
+  line-height: 2.3;
+}
+section .content2 {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+}
+section .content2 .gallery{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #333;
+}
+section .content2 .gallery li{}
+section .content2 .gallery li a{}
+section .content2 .gallery li a img{}
+section .content2 .gallery li a span{
+  display: block;
+  text-align: center;
+}
+section .content2 .gallery li:hover a img{
+  opacity: .8;
+}
+section .content2 .gallery li:hover a span{
+  font-weight: bold;
+  text-align: center;
+}
+
+section .content3 {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+}
+section .content3 a{
+    
+}
+section .content3 a img{
+  width: 180px;
+}
+section .content3 a span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(255,255,255,.6);
+  padding: 10px 15px;
+}
+section .content3 a:hover img{
+  opacity: .8;
+}
+section .content3 a:hover span{
+  font-weight: bold;
+}
+#modalArea{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+  display: none;
+}
+#modalArea .modal{
+  width: 500px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+#modalArea .modal h4{
+  font-size: 1.3rem;
+}
+#modalArea .modal p{
+  padding: 20px 30px 40px;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+#modalArea .modal .btn{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #666;
+  color: #fff;
+  cursor: pointer;
+}
+#modalArea .modal .btn:hover{
+  background-color: #333;
+  font-weight: bold;
+}
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: #eee;
+}
+
+footer .footer1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer1 a img{
+  opacity: .8;
+}
+footer .footer1 a:hover img{
+  opacity: 1;
+}
+footer .footer2 {
+  flex-grow: 1;
+  text-align: center;
+}
+
+footer .footer2 .footer2-1 {
+  width: 100%;
+  height: 50px;
+}
+footer .footer2 .footer2-1 ul{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+footer .footer2 .footer2-1 ul li{
+  border-bottom: 1px transparent;
+}
+footer .footer2 .footer2-1 ul li:hover{
+  border-bottom: 1px solid;
+}
+footer .footer2 .footer2-1 ul li a{}
+
+footer .footer2 .footer2-2 {
+  width: 100%;
+  line-height: 50px;
+  opacity: .8;
+}

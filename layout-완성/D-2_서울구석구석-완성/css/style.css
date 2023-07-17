@@ -1,0 +1,303 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html{
+  font-size: 16px;
+  color: #333;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+#wrap {
+  min-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  width: 200px;
+}
+
+header .logo {
+  width: 100%;
+  line-height: 100px;
+  text-align: center;
+}
+header .logo a{}
+header .logo a img{}
+
+header nav {
+  height: 550px;
+}
+header nav .mainmenu{
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+header nav .mainmenu li{
+  background-color: #f66;
+  border: 1px solid #eee;
+}
+header nav .mainmenu > li:hover{
+  background-color: #f33;
+}
+header nav .mainmenu > li> a{
+  line-height: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+header nav .mainmenu .submenu{
+  display: none;
+}
+header nav .mainmenu .submenu li{
+  background-color: #f99
+}
+header nav .mainmenu .submenu li:hover{
+  background-color: #f88
+}
+header nav .mainmenu .submenu li a{
+  line-height: 45px;
+  font-size: 1.1rem;
+}
+
+main {
+  width: calc(100% - 200px);
+}
+
+.mainTop {
+  width: 100%;
+  display: flex;
+}
+
+.mainTop .image {
+  width: calc(100% - 230px);
+  height: 400px;
+  overflow: hidden;
+}
+.mainTop .image .slider{
+  width: 300%;
+  display: flex;
+}
+.mainTop .image .slider li{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+}
+.mainTop .image .slider li:hover{
+  opacity: .9;
+  font-weight: bold;
+}
+.mainTop .image .slider li:nth-child(1){
+  background: url("../images/slider01.jpg") top / cover;
+}
+.mainTop .image .slider li:nth-child(2){
+  background: url("../images/slider02.jpg") top / cover;
+}
+.mainTop .image .slider li:nth-child(3){
+  background: url("../images/slider03.jpg") top / cover;
+}
+.mainTop .image .slider li a{
+  width: 100%;
+  line-height: 50px;
+  background-color: rgba(255,255,255,.6);
+  text-align: center;
+}
+.mainTop .image .slider li a span{
+  font-size: 1.1rem;
+}
+
+.mainTop .banner {
+  width: 230px;
+  height: 400px;
+  background-color: #eee;
+}
+.mainTop .banner ul{
+  /* width: 90%; */
+  height: 100%;
+  text-align: center;
+}
+.mainTop .banner ul li{}
+.mainTop .banner ul li img:hover{
+  opacity: .8;
+}
+.mainTop .banner ul li.text{
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+.mainTop .banner ul li h4{
+  font-size: 1.1rem;
+}
+.mainTop .banner ul li p{
+  margin: 10px 0 20px;
+}
+.mainTop .banner ul li span{
+  display: block;
+  text-indent: -9999px;
+  width: 40px;
+  height: 40px;
+  border-top: 3px solid #333;
+  border-right: 3px solid #333;
+  transform: rotate(45deg);
+  margin: auto;
+  opacity: .8;
+  cursor: pointer;
+}
+.mainTop .banner ul li span:hover{
+  opacity: 1;
+}
+
+
+section {
+  width: 100%;
+  display: flex;
+  border-left: 1px solid #eee;
+}
+section div{
+  padding: 15px 20px;
+}
+section div h2{
+  width: 100px;
+  line-height: 35px;
+  border: 1px solid #333;
+  text-align: center;
+  font-size: 1.2rem;
+  border-bottom: none;
+}
+section .content1 {
+  width: 50%;
+  height: 250px; 
+}
+section div ul{
+  width: 95%;
+  height: 180px;
+  border: 1px solid #333;
+}
+
+section .content1 .notice{
+}
+section .content1 .notice li:nth-child(even){
+  background-color: #eee;
+}
+section .content1 .notice li:hover{
+  background-color: #eea;
+}
+section .content1 .notice li a{
+  width: 90%;
+  margin: auto;
+  line-height: 2.5;
+  display: flex;
+  justify-content: space-between;
+}
+section .content1 .notice li a strong{
+  font-size: 17px;
+}
+section .content1 .notice li a span{}
+
+section .content2 {
+  width: 50%;
+  height: 250px;
+}
+section .content2 .gallery{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+section .content2 .gallery li{}
+section .content2 .gallery li a{}
+section .content2 .gallery li a img{
+  width: 135px;
+}
+section .content2 .gallery li a span{
+  display: block;
+  text-align: center;
+}
+section .content2 .gallery li a:hover img{
+  opacity: .8;
+}
+section .content2 .gallery li a:hover span{
+  font-weight: bold;
+}
+
+#modalArea{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  display: none;
+}
+#modalArea .modal{
+  width: 500px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 35px;
+  text-align: center;
+}
+#modalArea .modal h2{}
+#modalArea .modal p{
+  margin: 10px 20px 35px;
+}
+#modalArea .modal .btn{
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 15px;
+  background-color: #777;
+  color: #eee;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#modalArea .modal .btn:hover{
+  background-color: #444;
+  color: #fff;
+}
+
+
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: #ddd;
+}
+
+footer .footer1 {
+  width: 200px;
+}
+
+footer .footer2 {
+  width: calc(100% - 400px);
+  text-align: center;
+}
+
+footer .footer3 {
+  width: 200px;
+}
+footer .footer3 select{
+  width: 150px;
+  height: 40px;
+  font-size: 1rem;
+}
+footer .footer3 select option{
+}
+footer .footer3 select option:hover{
+  font-weight: bold;
+}
