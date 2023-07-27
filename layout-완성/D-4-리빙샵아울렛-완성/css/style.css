@@ -310,6 +310,9 @@ footer .footer2 .footer2-1 ul li::after{
   top: 0;
   right: -20px;
 }
+footer .footer2 .footer2-1 ul li:last-child:after{
+  display: none;
+}
 footer .footer2 .footer2-1 ul li:hover a{
   font-weight: bold;
 }
