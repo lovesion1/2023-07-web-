@@ -80,7 +80,22 @@ nav .mainmenu .submenu li a{
 nav .mainmenu .submenu li:hover a{
   background-color: #f90;
 }
+header .spot{
+  margin-top: 20px;
+}
+header .spot ul{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+header .spot ul li{}
+header .spot ul li span{
 
+}
+header .spot ul li a{}
+header .spot ul li a:hover{
+  text-decoration: underline;
+}
 main {
   width: calc(100% - 200px);
   height: 850px;
