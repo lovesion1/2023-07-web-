@@ -101,7 +101,7 @@
             text-align: center;
             background-color: #ccc;
         }
-        nav .mainmenu a:hover {
+        nav .mainmenu li:hover a {
             background-color: #dbdbdb;
         }
         nav .mainmenu .submenu {
@@ -111,9 +111,6 @@
             width: 200px;
             background-color: #6d6d6d;
             display: none;
-        }
-        nav .mainmenu li:hover .submenu{
-            display: block;
         }
         nav .mainmenu .submenu a {
             padding: 10px;
@@ -125,75 +122,83 @@
     </style>
 </head>
 <body>
-    <body>
-        <div id="wrap">
-            <header>
-                <h1></h1>
-                <nav>
-                    <ul class="mainmenu">
-                        <li>
-                            <a href="#">메뉴1</a>
-                            <ul class="submenu">
-                                <li><a href="#">서브메뉴1-1</a></li>
-                                <li><a href="#">서브메뉴1-2</a></li>
-                                <li><a href="#">서브메뉴1-3</a></li>
-                                <li><a href="#">서브메뉴1-4</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">메뉴2</a>
-                            <ul class="submenu">
-                                <li><a href="#">서브메뉴2-1</a></li>
-                                <li><a href="#">서브메뉴2-2</a></li>
-                                <li><a href="#">서브메뉴2-3</a></li>
-                                <li><a href="#">서브메뉴2-4</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">메뉴3</a>
-                            <ul class="submenu">
-                                <li><a href="#">서브메뉴3-1</a></li>
-                                <li><a href="#">서브메뉴3-2</a></li>
-                                <li><a href="#">서브메뉴3-3</a></li>
-                                <li><a href="#">서브메뉴3-4</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">메뉴4</a>
-                            <ul class="submenu">
-                                <li><a href="#">서브메뉴4-1</a></li>
-                                <li><a href="#">서브메뉴4-2</a></li>
-                                <li><a href="#">서브메뉴4-3</a></li>
-                                <li><a href="#">서브메뉴4-4</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <!-- //header -->
+    <div id="wrap">
+        <header>
+            <h1></h1>
+            <nav>
+                <ul class="mainmenu">
+                    <li>
+                        <a href="#">메뉴1</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴1-1</a></li>
+                            <li><a href="#">서브메뉴1-2</a></li>
+                            <li><a href="#">서브메뉴1-3</a></li>
+                            <li><a href="#">서브메뉴1-4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴2</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴2-1</a></li>
+                            <li><a href="#">서브메뉴2-2</a></li>
+                            <li><a href="#">서브메뉴2-3</a></li>
+                            <li><a href="#">서브메뉴2-4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴3</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴3-1</a></li>
+                            <li><a href="#">서브메뉴3-2</a></li>
+                            <li><a href="#">서브메뉴3-3</a></li>
+                            <li><a href="#">서브메뉴3-4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴4</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴4-1</a></li>
+                            <li><a href="#">서브메뉴4-2</a></li>
+                            <li><a href="#">서브메뉴4-3</a></li>
+                            <li><a href="#">서브메뉴4-4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- //header -->
+
+        <main>
+            <article id="slider"></article>
+            <article id="link"></article>
+            <section>
+                <div class="content1"></div>
+                <div class="content2"></div>
+            </section>
+        </main>
+        <!-- //main -->
+
+        <footer>
+            <div class="footer1"></div>
+            <div class="footer2">
+                <div class="footer2-1"></div>
+                <div class="footer2-2"></div>
+            </div>
+            <div class="footer3"></div>
+        </footer>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        const $mainmenu = $(".mainmenu li")
+        const $submenu = $(".submenu")
+
+        $mainmenu.hover(function(){
+            $(this).find($submenu).stop().slideToggle()
+  })
+    </script>
     
-            <main>
-                <article id="slider"></article>
-                <article id="link"></article>
-                <section>
-                    <div class="content1"></div>
-                    <div class="content2"></div>
-                </section>
-            </main>
-            <!-- //main -->
-    
-            <footer>
-                <div class="footer1"></div>
-                <div class="footer2">
-                    <div class="footer2-1"></div>
-                    <div class="footer2-2"></div>
-                </div>
-                <div class="footer3"></div>
-            </footer>
-            <!-- //footer -->
-        </div>
-        <!-- //wrap -->
-    </body>
 
     
 </body>

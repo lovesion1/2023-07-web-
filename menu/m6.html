@@ -103,7 +103,7 @@
             text-align: center;
             background-color: #ccc;
         }
-        nav .mainmenu li > a:hover {
+        nav .mainmenu li:hover > a {
             background-color: #aeaeae;
         }
         nav .mainmenu .submenu {
@@ -112,9 +112,6 @@
             top: 0;
             width: 500px;
             display: none;
-        }
-        nav .mainmenu:hover .submenu{
-            display: block;
         }
         nav .mainmenu .submenu li {
             display: inline;
@@ -219,12 +216,14 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-       $(".mainmenu").mouseenter(function(){
-         $("main").addClass("on")
-        })
-        $(".mainmenu").mouseleave(function(){
-         $("main").removeClass("on")
+        const $mainmenu = $(".mainmenu")
+        const $submenu = $(".submenu")
+        const $main =$("main")
+        $mainmenu.hover(function(){
+            $submenu.stop().slideToggle(100);
+            $main.stop().toggleClass("on")
         })
     </script>
+
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -102,15 +102,13 @@
             font-weight: bold;
             font-size: 20px;
         }
-        nav .mainmenu  li > a:hover {
+        nav .mainmenu  li:hover > a {
             background-color: #9c9c9c;
         }
         nav .mainmenu .submenu {
             display: none;
         }
-        nav .mainmenu li:hover .submenu{
-            display: block;
-        }
+
         nav .mainmenu .submenu a {
             font-weight: normal;
             display: block;
@@ -189,7 +187,15 @@
         <!-- //footer -->
     </div>
     <!-- //wrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        const $mainmenu = $(".mainmenu li")
+        const $submenu = $(".submenu")
 
+        $mainmenu.hover(function(){
+            $(this).find($submenu).stop().slideToggle()
+  })
+    </script>
    
 </body>
 </html>

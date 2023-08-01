@@ -93,7 +93,7 @@
             font-weight: bold;
             background-color: #b0b0b0;
         }
-        nav .mainmenu > li > a:hover {
+        nav .mainmenu > li:hover > a {
             background-color: #696969;
         }
         nav .mainmenu .submenu {
@@ -108,8 +108,7 @@
             transition: .6s;
         }
         nav .mainmenu > li:hover .submenu {
-            display: block;
-            height: 155px;
+            /* height: 155px; */
 
         }
         nav .mainmenu .submenu a {
@@ -187,6 +186,15 @@
         <!-- //footer -->
     </div>
     <!-- //wrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        const $mainmenu = $(".mainmenu li")
+        const $submenu = $(".submenu")
+
+        $mainmenu.hover(function(){
+            $(this).find($submenu).stop().slideToggle(100)
+  })
+    </script>
 
 </body>
 </html>
