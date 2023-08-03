@@ -1,13 +1,13 @@
 @charset "UTF-8";
-
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body,html{
   color: #333;
   font-size: 16px;
-  background: #fff;
+  line-height: 1.2;
 }
 ul{
   list-style: none;
@@ -47,7 +47,7 @@ header nav .mainMenu{
   position: relative;
 }
 header nav .mainMenu li{
-  
+  background-color: #aaf;
 }
 header nav .mainMenu li a{
   width: 200px;
@@ -55,11 +55,10 @@ header nav .mainMenu li a{
 }
 header nav .mainMenu > li> a{
   line-height: 50px;
-  background-color: #bbc;
   font-weight: bold;
   font-size: 1.2rem;
 }
-header nav .mainMenu li:hover a{
+header nav .mainMenu li:hover{
   background-color: #bbf;
 }
 header nav .mainMenu .subMenu{
@@ -71,11 +70,11 @@ header nav .mainMenu .subMenu{
 header nav .mainMenu .subMenu li{}
 header nav .mainMenu .subMenu li a{
   line-height: 45px;
-  background-color: #ccc;
+  background-color: #ccf;
   font-weight: bold;
 }
 header nav .mainMenu .subMenu li a:hover{
-  background-color: #cc9;
+  background-color: #ccccce;
 }
 
 article {
@@ -90,13 +89,19 @@ article .slider li a{}
 article .slider li a img{
   display: block;
 }
+article .slider li a:hover img{
+  opacity: .8;
+}
 article .slider li a span{
   position: absolute;
-  background-color: #fff;
+  background-color: rgba(255,255,255,.7);
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   padding: 30px;
+}
+article .slider li a:hover span{
+  font-weight: bold;
 }
 main {
   width: 100%;

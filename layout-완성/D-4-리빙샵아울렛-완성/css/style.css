@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +9,7 @@ html,body{
   font-size: 16px;
   line-height: 1.2;
   color: #333;
+  background-color: #fff;
 }
 a{
   text-decoration: none;
@@ -44,7 +44,6 @@ header {
 header .logo {
   width: 100%;
   height: 100px;
-  background-color: #efefef;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +52,6 @@ header .logo {
 header .nav {
   width: 100%;
   height: 700px;
-  background-color: #e3e3e3;
 }
 header nav .mainmenu{
   width: 90%;
@@ -114,8 +112,11 @@ article .slider li{
   position: relative;
 }
 article .slider li a{
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  
+  height: 100%;
 }
 article .slider li a img{
   width: 100%;

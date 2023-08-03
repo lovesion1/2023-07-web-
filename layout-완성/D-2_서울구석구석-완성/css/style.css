@@ -1,13 +1,13 @@
 @charset "UTF-8";
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body,html{
+html,body{
   font-size: 16px;
   color: #333;
+  /* background-color: #fff; */
 }
 ul{
   list-style: none;
@@ -95,6 +95,8 @@ main {
   height: 400px;
   display: flex;
   align-items: flex-end;
+  opacity: 1;
+  position: relative;
 }
 .mainTop .image .slider li:hover{
   opacity: .9;
@@ -110,19 +112,35 @@ main {
   background: url("../images/slider03.jpg") top / cover;
 }
 .mainTop .image .slider li a{
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  line-height: 50px;
-  background-color: rgba(255,255,255,.6);
+  height: 100%;
   text-align: center;
 }
 .mainTop .image .slider li a span{
+  background-color: rgba(255,255,255,.7);
   font-size: 1.1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 20px 30px;
 }
 
 .mainTop .banner {
   width: 230px;
   height: 400px;
   background-color: #eee;
+  position: relative;
+}
+.mainTop .banner a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .mainTop .banner ul{
   /* width: 90%; */

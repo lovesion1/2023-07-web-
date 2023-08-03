@@ -5,8 +5,9 @@
   box-sizing: border-box;
 }
 html,body{
-  color: #333;
   font-size: 16px;
+  color: #333;
+  background-color: #fff;
 }
 ul{
   list-style: none;
@@ -99,7 +100,6 @@ header .spot ul li a:hover{
 main {
   width: calc(100% - 200px);
   height: 850px;
-  background-color: #e3e3e3;
 }
 
 article {
@@ -117,6 +117,13 @@ article .slider li{
   width: 100%;
   height: 400px;
   background-position: center;
+}
+article .slider li a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 article .slider li:nth-child(1){
   background: url(../images/slider01.jpg);
@@ -171,9 +178,9 @@ section.contents{
 section .banner {
   width: 100%;
   height: 200px;
-  background-color: #d1d1d1;
+  background-color: rgba(255,255,255,.7);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 }
@@ -203,6 +210,7 @@ section .tabmenu {
   height: 250px;
   padding: 10px;
   position: relative;
+  border-top: 5px solid rgba(0,0,0,.2);
 }
 section .tabmenu> li{
   float: left;
@@ -316,7 +324,6 @@ section .tabmenu .gallery li a span{
 #modalArea .modal .btn:hover{
   background-color: #533;
 }
-
 
 footer {
   width: 100%;

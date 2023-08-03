@@ -9,6 +9,7 @@ html,body{
   font-size: 16px;
   line-height: 1.2;
   color: #333;
+  background-color: #fff;
 }
 a{
   text-decoration: none;
@@ -133,8 +134,11 @@ article .slider li{
   position: relative;
 }
 article .slider li a{
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  
+  height: 100%;
 }
 article .slider li a img{
   width: 100%;
@@ -189,14 +193,27 @@ article .link li:hover img{
 article .link span{
   display: block;
 }
+section.banner{
+  position: relative;
+}
 section.banner ul {
   width: 100%;
   height: 200px;
-  background-color: #d1d1d1;
+  background-color: #eee;
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
+}
+section.banner ul:hover{
+  opacity: .8;
+}
+section.banner > a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 section.banner:hover img{
   opacity: .8;
@@ -208,7 +225,7 @@ section.banner li h4{
 section.banner li p{
   width: 80%;
 }
-section.banner li a span{
+section.banner li span{
   width: 60px;
   height: 60px;
   display: block;

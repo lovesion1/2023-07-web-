@@ -4,6 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,body{
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
 ul{
   list-style: none;
 }
@@ -27,6 +32,10 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: .8;
+}
+header .logo:hover{
+  opacity: 1;
 }
 header nav {
   height: 550px;
@@ -269,15 +278,19 @@ section .content3 a span{}
 footer {
   width: 100%;
   display: flex;
-  background-color: #bbb;
+  background-color: #f66;
+  color: #fff;
 }
 
 footer .footer1 {
-  /* width: 200px; */
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: .8;
+}
+footer .footer1:hover{
+  opacity: 1;
 }
 footer .footer1 a{
   padding: 0 10px;

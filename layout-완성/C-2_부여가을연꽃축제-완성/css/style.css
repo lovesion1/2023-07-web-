@@ -4,6 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,body{
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
 ul{
   list-style: none;
 }
@@ -12,7 +17,9 @@ a{
   color: inherit;
   display: block;
 }
-
+address{
+  font-style: normal;
+}
 #wrap {
   width: 1000px;
   display: flex;
@@ -220,8 +227,9 @@ main .content3 a:hover span{
 footer {
   width: 100%;
   display: flex;
-  background-color: #ddd;
+  background-color: #f66;
   align-items: center;
+  color: #fff;
 }
 
 footer .footer1 {
