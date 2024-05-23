@@ -14,6 +14,7 @@ $(function(){
       marginTop : index * -300
     })
   },3000)
+  
 
   $(".notice li:first-child").click(function(){
     $("#modalArea").fadeIn()
