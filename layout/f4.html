@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹디자인기능사 레이아웃 E-4</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #wrap {
+      width: 100%;
+    }
+    .align{
+      width: 1340px;
+      margin: auto;
+    }
+
+    header {
+      width: 200px;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    header .logo {
+      width: 200px;
+      height: 100px;
+      background-color:#999;
+    }
+
+    header nav {
+      width: 700px;
+      height: 50px;
+      background-color:#888;
+    }
+    
+    main {
+      width: 100%;
+      height: 350px;
+      background-color: #877;
+    }
+
+    section {
+      position: relative;      
+    }
+
+    section .link {
+      position: absolute;
+      top: -100px;
+      width: 1340px;
+      height: 100px;
+      background-color: #888;
+    }
+
+    section .banner {
+      width: 100%;
+      height: 150px;
+      background-color:#777;
+    }
+
+    section article{
+      width: 100%;
+      height: 350px;
+      background-color: #999;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    section .notice {
+      width: 600px;
+      height: 300px;
+      background-color: #111;
+    }
+
+    section .gallery {
+      width: 600px;
+      height: 300px;
+      background-color: #222;
+    }
+
+    footer {
+      width: 100%;
+      display: flex;
+      
+    }
+
+    footer .footer1 {
+      width: 250px;
+      height: 120px;
+      background-color: #777;
+    }
+
+    footer .footer2 {
+      width: calc(100% - 200px);
+    }
+
+    footer .footer2 .footer2-1{
+      height: 60px;
+      background-color: #666;
+    }
+
+    footer .footer2 .footer2-2 {
+      /* width: 100%; */
+      height: 60px;
+      background-color: #555;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <header class="align">
+      <h1 class="logo"></h1>
+      <nav></nav>
+    </header>
+    <!-- //header -->
+    <main>
+    </main>
+    <!-- //main -->
+    <section class="align">
+      <div class="link"></div>
+      <div class="banner"></div>
+      <article>
+        <div class="notice"></div>
+        <div class="gallery"></div>
+      </article>
+    </section>
+    <!-- //contents -->
+    
+
+    <footer class="align">
+      <div class="footer1"></div>
+      <div class="footer2">
+        <div class="footer2-1"></div>
+        <div class="footer2-2"></div>
+      </div>
+    </footer>
+    <!-- //footer -->
+  </div>
+  <!-- //wrap -->
+</body>
+
+</html>
