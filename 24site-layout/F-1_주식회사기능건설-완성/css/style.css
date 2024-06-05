@@ -1,0 +1,358 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+#wrap {
+    width: 100%;
+}
+.align{
+    width: 1340px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    height: 100px;
+}
+
+header .logo {
+width: 20%;
+text-align: center;
+line-height: 100px;
+}
+
+header nav {
+width: 80%;
+}
+header nav .mainMenu{
+height: 100%;
+display: flex;
+justify-content:flex-end;
+align-items: flex-end;
+position: relative;
+}
+header nav .mainMenu li{
+width: 200px;
+background-color: #aaf;
+}
+header nav .mainMenu li a{
+text-align: center;
+}
+header nav .mainMenu > li> a{
+line-height: 50px;
+font-weight: bold;
+font-size: 1.2rem;
+}
+header nav .mainMenu li:hover{
+background-color: #bbf;
+}
+header nav .mainMenu .subMenu{
+display: none;
+position: absolute;
+top: 100px;
+z-index: 3;
+}
+
+header nav .mainMenu .subMenu li a{
+line-height: 45px;
+background-color: #ccf;
+font-weight: bold;
+}
+header nav .mainMenu .subMenu li a:hover{
+background-color: #a9a9ff;
+}
+
+main {
+    width: 100%;
+    height: 350px;
+}
+main ul.slider{
+position: relative;
+}
+main ul.slider li{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+}
+
+main ul.slider li a span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,.8);
+    padding: 20px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+}
+main ul.slider li a:hover img{
+    opacity: .8;
+}
+main ul.slider li a:hover span{
+    font-weight: bold;
+}
+
+section {
+    position: relative;      
+}
+
+section .link {
+    position: absolute;
+    top: -100px;
+    width: 1340px;
+    height: 100px;
+    background-color: #ceeff5;
+}
+section .link ul{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+section .link ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+section .link ul li a img{
+  opacity: .8;
+}
+section .link ul li a img:hover{
+  opacity: 1;
+}
+
+
+section .banner{
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+
+section .banner ul {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+section .banner ul:hover{
+  opacity: .8;
+}
+
+section .banner > a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+section .banner:hover img{
+  opacity: .8;
+}
+
+section .banner li h4{
+  line-height: 3;
+  font-size: 1.2rem;
+}
+
+section .banner li p{
+  width: 80%;
+}
+
+section .banner li span{
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-top: 5px solid #333;
+  border-right: 5px solid #333;
+  transform: rotate(45deg);
+  text-indent: -9999px;
+}
+
+
+section .content{
+    width: 100%;
+    height: 250px;
+    background-color: #c1acfc;
+    padding: 10px;
+}
+
+
+.content .tabmenu{
+  margin-left: 30px;
+}
+.content .tabmenu li{
+  margin: 0 10px;
+  position: relative;
+}
+.content .tabmenu li.active{
+
+}
+.content .tabmenu > li > a{
+float: left;
+width: 100px;
+line-height: 35px;
+border: 1px solid #333;
+text-align: center;
+border-bottom: none;
+}
+.content .tabmenu > li.active > a{
+background-color: #333;
+color: #fff;
+font-weight: bold;
+}
+.content .tabmenu > li:hover > a{
+font-weight: bold;
+}
+.content .tabmenu li div{
+width: 700px;
+height: 0;
+position: absolute;
+left: 0;
+top: 35px;
+border: 1px solid #333;
+display: none;
+}
+.content .tabmenu li.active div{
+height: 180px;
+display: block;
+}
+.content .tabmenu .notice{}
+.content .tabmenu .notice ul{
+padding: 5px;
+}
+.content .tabmenu .notice ul li{}
+.content .tabmenu .notice ul li a{
+display: flex;
+justify-content: space-between;
+font-size: 14.5px;
+line-height: 40px;
+}
+.content .tabmenu .notice ul li a:hover{
+text-decoration: underline;
+}
+.content .tabmenu .notice ul li a strong{}
+.content .tabmenu .notice ul li a strong span{}
+.content .tabmenu .gallery{}
+.content .tabmenu .gallery ul{
+height: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.content .tabmenu .gallery ul li{
+
+}
+.content .tabmenu .gallery ul li a{
+
+}
+.content .tabmenu .gallery ul li a img{
+width: 85px;
+}
+.content .tabmenu .gallery ul li a span{
+display: block;
+text-align: center;
+}
+.content .tabmenu .gallery ul li a:hover img{
+opacity: .8;
+}
+.content .tabmenu .gallery ul li a:hover span{
+font-weight: bold;
+}
+
+#modalArea{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  z-index: 3;
+  display: none;
+}
+#modalArea .modal{
+  background-color: #fff;
+  width: 500px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px 40px;
+  text-align: center;
+}
+#modalArea .modal h4{
+  font-size: 1.2rem;
+}
+#modalArea .modal p{
+  padding: 30px 10px 40px;
+}
+#modalArea .modal .btn{
+  display: inline-block;
+  border: 1px solid #333;
+  padding: 10px 15px;
+  font-size: 12px;
+}
+#modalArea .modal .btn:hover{
+  background-color: #333;
+  color: #fff;
+}
+
+footer{
+  width: 100%;
+  height: 120px;
+  background-color: #ddd;
+  display: flex;
+}
+footer .flogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .flogo h3{}
+footer .flogo h3 a{}
+footer .flogo h3 a img{}
+footer .f-all{
+  height: 60px;
+  padding-left: 15px;
+}
+footer .f-all .fmenu{
+  display: flex;
+  height: 60px;
+  align-items: center;
+  gap: 30px;
+}
+footer .f-all .fmenu li{
+  position: relative;
+}
+footer .f-all .fmenu li::after{
+  content:"|";
+  position: absolute;  
+  top: 0;
+  right: -20px;
+}
+footer .f-all .fmenu li:last-child:after{
+  display: none;
+}
+footer .f-all .fmenu li a:hover{
+  text-decoration: underline;
+}
+footer .f-all address{
+  line-height: 60px;
+}
+
