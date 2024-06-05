@@ -222,7 +222,7 @@ section .content1 {
   width: 50%;
   height: 250px; 
 }
-section div ul{
+section .content ul{
   width: 95%;
   height: 180px;
   border: 1px solid #333;
